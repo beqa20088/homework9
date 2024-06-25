@@ -1,0 +1,35 @@
+body{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+div{
+    width: 199px;
+    height: 154px;
+    position: relative;
+    animation: mymove 3s;
+    animation-iteration-count: infinite;
+}
+.div1{
+    background-color: #C7F0C0;
+}
+.div2{
+    background-color: #5A4646;
+}
+.div3{
+    background-color: #95B8CC;
+}
+.div4{
+    background-color: #E9C1C1;
+}
+@keyframes mymove{
+    from{width: 199px;}
+    to{width: 100%;}
+}
+@keyframes secondmove{
+    from{width: 100%;}
+    to{width: 199px;}
+    from{align-items: flex-start;}
+    to{align-items: flex-end;}
+}
